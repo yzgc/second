@@ -1,0 +1,133 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img { border:none; }
+img{display: block;}
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; }
+body { color:#333; padding:5px 0; font:12px/20px "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff;/* overflow-y:scroll;*/ overflow-x:hidden;}
+a { color:#666; text-decoration:none; }
+a:visited { color:#666; }
+a:hover, a:active, a:focus { color:#ff8400; text-decoration:underline;}
+#menu1 .menu-1 img{
+    width:67px;
+    height:68px;
+    margin-top:5px;
+}
+
+#menu1{
+    width:67px;
+    height:90px;
+    position:absolute;
+    display:none;
+    border:1px solid #f2f2f2;
+    border-top:none;
+}
+
+#menu2{
+    width:67px;
+    height:165px;
+    position:absolute;
+    display:none;
+    border:1px solid #f2f2f2;
+    border-top:none;
+}
+#menu2 .menu-2{
+    margin-left:8px;
+}
+#menu2 .menu-2 ul li{
+    padding-top:10px;
+    width:60px;
+}
+#menu2 .menu-2 ul li a{
+    display:block;
+    width:60px;
+}
+
+#menu3{
+    width:67px;
+    height:135px;
+    position:absolute;
+    display:none;
+    border:1px solid #f2f2f2;
+    border-top:none;
+    left:0;
+    top:0;
+}
+#menu3 .menu-3{
+    margin-left:8px;
+}
+#menu3 .menu-3 ul li{
+    padding-top:10px;
+    width:60px;
+}
+#menu3 .menu-3 ul li a{
+    display:block;
+    width:60px;
+}
+
+/********************dropdown*****************************/
+#dropdown{
+    width:1086px;
+    height:266px;
+    background:white;
+
+}
+
+#dropdown #dropdown1{
+    width:820px;
+    height:230px;
+    float:left;
+    margin-top:18px;
+}
+#dropdown #dropdown1 dl{
+    width:363px;
+    height:100px;
+    float:left;
+    margin-left:40px;
+}
+#dropdown #dropdown1 dl dt{
+    width:338px;
+    height:27px;
+    font-size:17px;
+    font-weight: bold;
+    color:#6c6c6c;
+    padding-left: 25px;
+    padding-top: 13px ;
+    border-bottom:1px dashed #cccccc;
+    background: url(../resource/indeximages/menu1.jpg) no-repeat left center;
+}
+#dropdown #dropdown1 dl dd{
+    float:left;
+    margin-right:25px;
+    margin-top:10px;
+}
+
+#dropdown #dropdown1 .dl2 dt{
+    background:  url(../resource/indeximages/menu2.jpg) no-repeat left center;
+}
+#dropdown #dropdown1 .dl3 dt{
+    background:  url(../resource/indeximages/menu3.jpg) no-repeat left center;
+}
+#dropdown #dropdown1 .dl4 dt{
+    background: url(../resource/indeximages/menu4.jpg) no-repeat left center;
+}
+
+
+
+
+#dropdown #dropdown2{
+    width:230px;
+    height:230px;
+    float:right;
+    background: green;
+    margin-top:18px;
+    margin-right:18px;
+}
+
+#shopcatimage{
+    width:302px;
+    height:295px;
+    background:1px solid #ccc;
+    display:none;
+    left:0;
+    top:0;
+}

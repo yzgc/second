@@ -1,0 +1,185 @@
+/*******************************banner********************/
+/*input{*/
+    /*color:#cccccc;*/
+    /*font-size: 14px;*/
+/*}*/
+#resbanner{
+    width:100%;
+    height:785px;
+    background:url(../resource/images/Login/img_bak1.jpg) no-repeat;
+}
+
+#resbanner #banner-2{
+    width:1082px;
+    height:785px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#resbanner #banner-1{
+    width:407px;
+    height:531px;
+    background: #ffffff;
+    position:absolute;
+    top:124px;
+    left:675px;
+}
+
+#resbanner #banner-2 #banner-3{
+    width:330px;
+    height:487px;
+    position: absolute;
+    top:32px;
+    left:40px;
+
+}
+
+#resbanner #banner-2 #banner-3 #int1{
+    margin-top:31px;
+
+}
+#resbanner #banner-2 #banner-3 #int2{
+    margin-top:24px;
+}
+#resbanner #banner-2 #banner-3 #int3{
+    margin-top:24px;
+}
+
+#resbanner #banner-2 #banner-3 span{
+    font-size:23px;
+    color:#000000;
+    font-weight: bold;
+
+}
+
+#resbanner #banner-2 #banner-3 span i{
+    font-style: normal;
+    font-size: 12px;
+    color:#ccc;
+    margin-left: 160px;
+
+}
+#resbanner #banner-2 #banner-3 span a{
+
+    font-size:16px;
+    color:#00c8ff;
+    width:33px;
+    float:right;
+
+}
+
+
+
+#resbanner #banner-2 #banner-3 input{
+    margin-top: 5px;
+    width:328px;
+    height:31px;
+}
+#resbanner #banner-2 #banner-3 #input3{
+    width:176px;
+    margin-top:22px;
+
+}
+#resbanner #banner-2 #banner-3 #span1{
+    display:inline-block;
+    width:75px;
+    height:21px;
+    border:1px solid blue;
+    margin:0px 10px;
+    margin-top:10px;
+}
+
+#resbanner #banner-2 #banner-3 #input4{
+    margin-top:10px;
+    width:20px;
+    heigth:20px;
+    float:left;
+
+}
+
+
+
+#resbanner #banner-2 #banner-3 u a{
+    display:inline-block;
+    float:right;
+    height:31px;
+    font-style: normal;
+    line-height: 31px;
+    margin-top: 10px;
+}
+
+#resbanner #banner-2 #banner-3 i a{
+    display:inline-block;
+    height:31px;
+    font-style: normal;
+    line-height: 31px;
+    margin-top: 10px;
+}
+
+#resbanner #banner-2 #banner-3 #button1{
+    width:328px;
+    height:31px;
+    background:#00c8ff;
+    font-size:18px;
+    color:white;
+    border:none;
+    margin-top:24px;
+}
+
+#resbanner #banner-2 #banner-3 p{
+    border-top:1px dashed #ccc;
+    margin-top:16px;
+    padding-top:15px;
+}
+#resbanner #banner-2 #banner-3 strong a{
+    font-weight: normal;
+    font-size:12px;
+    margin-top:0;
+    color:#00c8ff;
+}
+
+#resbanner #banner-2 #banner-3 ul{
+    margin-top:10px;
+}
+
+#resbanner #banner-2 #banner-3 ul li{
+    float:left;
+    width:35px;
+    height:25px;
+    margin-top:6px;
+    margin-right:5px;
+
+}
+#resbanner #banner-2 #banner-3 ul .li-10{
+    background: url(../resource/images/Login/img5.jpg) no-repeat left center;
+    padding-left:30px;
+}
+#resbanner #banner-2 #banner-3 ul .li-11{
+    background: url(../resource/images/Login/img6.jpg) no-repeat left center;
+    padding-left:30px;
+    width: 40px;
+
+}
+#resbanner #banner-2 #banner-3 ul .li-12{
+    background: url(../resource/images/Login/img7.jpg) no-repeat left center;
+    padding-left:30px;
+    width:80px;
+}
+#resbanner #banner-2 #banner-3 ul .li-13{
+    background: url(../resource/images/Login/img8.jpg) no-repeat left center;
+    padding-left:30px;
+}
+#resbanner #banner-2 #banner-3 ul .li-14{
+    background: url(../resource/images/Login/img9.jpg) no-repeat left center;
+    padding-left:30px;
+}
+#resbanner #banner-2 #banner-3 ul .li-15{
+    background: url(../resource/images/Login/img10.jpg) no-repeat left center;
+    padding-left:30px;
+    margin-right:12px;
+}
+#resbanner #banner-2 #banner-3 ul .li-16{
+    background: url(../resource/images/Login/img11.jpg) no-repeat left center;
+    padding-left:30px;
+}
