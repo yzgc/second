@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			html, body {
+				margin: 0;
+				padding: 0;
+			}
+			div {
+				width: 100px;
+				height: 100px;
+				background: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+	<script type="text/javascript" src="../animation.js"></script>
+	<script type="text/javascript">
+		function randomColor(el) {
+			var rVal = Math.floor(Math.random() * 256);
+			var gVal = Math.floor(Math.random() * 256);
+			var bVal = Math.floor(Math.random() * 256);
+			el.style.backgroundColor = 'rgb('+rVal+','+gVal+','+bVal+')'
+		}
+
+		var divs = document.getElementsByTagName('div');
+
+		var len = divs.length;
+		for (var i=0; i<len; i++) {
+			randomColor(divs[i]);
+
+			divs[i].onmouseover = function () {
+				animation.animate(this, 'width', 500)
+				randomColor(this);
+			}
+
+			divs[i].onmouseout = function () {
+				animation.animate(this, 'width', 100)
+				randomColor(this);
+			}
+		}
+		
+	</script>
+</html>
