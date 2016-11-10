@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-if</title>
+    <script src="js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <p v-if="green">hello!</p>
+    </div>
+
+    <script>
+        var four=new Vue({
+            el:"#app",
+            data:{
+                green:false
+            }
+        })
+    </script>
+</body>
+</html>

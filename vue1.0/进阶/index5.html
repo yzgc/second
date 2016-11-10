@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模版</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <my></my>
+    </div>
+    <script>
+        var Child = Vue.extend({
+            template:'<div>child content</div>' +
+            '<p>这是一个p标签</p>'
+        });
+        var Parent = Vue.extend({
+            template:'<my-com></my-com>',
+            components:{
+                'my-com':Child
+            }
+        })
+
+        new Vue({
+            el:"#app",
+            components:{
+                'my':Parent
+            }
+        })
+    </script>
+</body>
+</html>

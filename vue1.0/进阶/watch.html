@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width maximum-scalae=1 minimum-scale=1 initial-scale=1 user-scalable=no" >
+    <title>模版</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button v-on:click="change" id="app">button</button>
+    <script>
+//        var vm =new Vue({
+//            el:"#app",
+//            data:{
+//                a:1
+//            },
+//            watch:{
+//                'a':function(){
+//                    console.log('激发了')
+//                }
+//            },
+//            methods:{
+//                change:function () {
+//                    this.a=Math.random()*10
+//                    console.log(this.a)
+//                }
+//            }
+//        })
+
+        var vm = new Vue({
+            events: {
+                'hook:created': function () {
+                    console.log('created!')
+                },
+                greeting: function (msg) {
+                    console.log(msg)
+                },
+                // 也可以是方法的名字
+                bye: 'sayGoodbye'
+            },
+            methods: {
+                sayGoodbye: function () {
+                    console.log('goodbye!')
+                }
+            }
+        }) // -> created!
+        vm.$emit('greeting', 'hi!') // -> hi!
+        vm.$emit('bye')
+    </script>
+</body>
+</html>

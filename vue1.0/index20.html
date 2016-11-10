@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 状态动画 watcher </title>
+    <script src="js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!--
+        所有的原始数字都被事先存储起来，可以直接转换到数字。
+        做到这一步，我们就可以结合 Vue 的响应式和组件系统，使用第三方库来实现切换元素的过渡状态。
+    -->
+    <div id="app">
+        <input type="number" step="10" v-model="value">
+        <br>
+        <p>{{value}}</p>
+    </div>
+
+    <script src="https://unpkg.com/tween.js@16.3.4"></script>
+    <script>
+        var ve = new Vue({
+            el:"#app",
+            data:{
+                value:1
+            },
+            created:function () {
+                
+            }
+        })
+    </script>
+</body>
+</html>

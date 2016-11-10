@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width maximum-scalae=1 minimum-scale=1 initial-scale=1 user-scalable=no" >
+    <title>状态管理</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <div id="example"></div>
+
+    <script>
+        var store = {
+            state:{
+                message:'hello word!'
+            },
+            actionA:function () {
+                this.state.message='this change from actionA';
+                return this.state.message;
+            },
+            actionB:function () {
+                this.state.message='that change from actionB';
+                return this.state.message;
+            }
+        }
+
+        var vmA = new Vue({
+            el:"#app",
+            data:{
+                privateState: {},
+                sharedState: store.state
+            }
+        })
+
+        var vmB = new Vue({
+            el:"#example",
+            data:{
+                privateState:{},
+                sharedState:store.state
+            }
+        })
+
+        console.log(store.state.message);
+        console.log(store.actionA());
+        console.log(store.actionB());
+    </script>
+</body>
+</html>

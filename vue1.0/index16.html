@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>单元素/单组件过渡</title>
+    <script src="js/vue.js"></script>
+    <style>
+        /*.fade-enter-active{*/
+            /*transition: all 1s ease;*/
+        /*}*/
+        /*.fade-leave-active{*/
+            /*opacity: 0;*/
+        /*}*/
+
+
+        /* 可以设置不同的进入和离开动画 */
+        /* 设置持续时间和动画函数 */
+        .slide-fade-enter-active {
+            transition: all .3s ease;
+        }
+        .slide-fade-leave-active {
+            transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+        }
+        .slide-fade-enter, .slide-fade-leave-active {
+            padding-left: 10px;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+        <!--本节内容可能存在其他问题，，原因待查-->
+
+    <!--元素封装成过渡组件之后，在遇到插入或删除时，Vue 将-->
+
+    <!--自动嗅探目标元素是否有 CSS 过渡或动画，并在合适时添加/删除 CSS 类名。-->
+
+    <!--如果过渡组件设置了过渡的 JavaScript 钩子函数，会在相应的阶段调用钩子函数。-->
+
+    <!--如果没有找到 JavaScript 钩子并且也没有检测到 CSS 过渡/动画，DOM 操作（插入/删除）在下一帧中立即执行。-->
+
+    <!--<div id="app">-->
+
+        <!--<button v-on:click="flag=!flag">点击切换</button>-->
+
+        <!--<transition  name="fade">-->
+            <!--<p v-if="flag">Hello Vue.js</p>-->
+        <!--</transition>-->
+
+
+                <div id="example-1">
+                    <button v-on:click="show = !show">
+                        Toggle render
+                    </button>
+                    <transition name="slide-fade">
+                        <p v-if="show">Hello Vue.js</p>
+                    </transition>
+                </div>
+
+                </div>
+                <script>
+//        var ve = new Vue({
+//            el:"#app",
+//            data:{
+//                flag:true
+//            }
+//        })
+
+
+            new Vue({
+                el: '#example-1',
+                data: {
+                    show: true
+                }
+            })
+    </script>
+</body>
+</html>

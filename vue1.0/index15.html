@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据同步延迟</title>
+    <script src="js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--注意：debounce不能延迟input的事件-->
+        <input type="text" v-model="shuju" debounce="1000">
+        <span>{{shuju}}</span>
+    </div>
+
+    <script>
+        var ve = new Vue({
+            el:"#app",
+            data:{
+                shuju:"hello"
+            }
+        })
+    </script>
+</body>
+</html>

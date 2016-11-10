@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项框及下拉框用法</title>
+    <script src="js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <!------------单选框的逻辑判断-------------->
+        <input type="checkbox" id="checkbox" v-model="checked">
+        <label for="checkbox">{{checked}}</label></br>
+        <!------------多个勾选框-------------->
+        <input type="checkbox" id="Jack" value="Jack" v-model="checkedValue">
+        <label for="Jack">Jack</label></br>
+        <input type="checkbox" id="Jack" value="Tom" v-model="checkedValue">
+        <label for="Jack">Tom</label></br>
+        <input type="checkbox" id="Jack" value="Rose" v-model="checkedValue">
+        <label for="Jack">Rose</label></br>
+        <span>checkedName: {{checkedValue | json}}</span>
+        <!--
+            json是JavaScript对象表示语法的子集
+            形式是键值对的形式
+            以逗号隔开
+            花括号保存对象
+            中括号保存数组
+        -->
+
+        <input type="radio" id="one" value="one" v-model="bindshuju">
+        <label for="one">one</label></br>
+        <input type="radio" id="two" value="two" v-model="bindshuju">
+        <label for="two">two</label></br>
+        <span>bindshujuis:{{bindshuju}}</span>
+        <br>
+        <!------------下拉框单选-------------->
+        <!--想要多选的话，加上multiple即可，会绑定到一个数组上-->
+        <select v-model="selected">
+            <option selected>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select>
+        <br>
+        <span>选中的是: {{selected}}</span>
+        <br>
+
+        <!--
+        动态绑定对应的值
+        v-model绑定的即选中的框中的value,就是下面的selected
+        要动态对应我们需要用v-for,那么不需要写那么多的option
+        -->
+
+        <select v-model="s">
+
+            <!-这个地方要注意，option的值是value不能是其他的变量名->
+            <option v-for="mul in todos" v-bind:value="mul.value">{{mul.name}}</option>
+        </select>
+        <br>
+        <span>选中的是: {{s}}</span>
+
+    </div>
+
+    <script>
+        var one=new Vue({
+            el:"#app",
+            data:{
+                checkedValue:[],
+                todos:[
+                    {value:'AAA',name:'one'},
+                    {value:'bbb',name:'two'},
+                    {value:'ccc',name:'three'},
+                    {value:'DDD',name:'four'}
+                ]
+            }
+
+        })
+    </script>
+</body>
+</html>

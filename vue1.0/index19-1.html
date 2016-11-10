@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模版</title>
+    <script src="js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button type="text" v-on:click="add" v-bind:style="objstyle" >add</button>
+        <br>
+        <button type="text" v-on:click="remove" v-bind:style="objstyle">remove</button>
+        <br>
+        <span  v-for="item in items">{{ " " + item + ""}}</span>
+    </div>
+    <script>
+
+        //splice()
+        new Vue({
+            el:"#app",
+            data:{
+                items:[1,2,3,4,5,6,7,8,9],
+                num:10,
+                objstyle:{
+                    width:'80px'
+                }
+            },
+            methods:{
+                randomIndex:function(){
+                    return Math.floor(Math.random()*this.items.length);
+                },
+                add:function () {
+                    this.items.push(this.num++);
+                },
+                remove:function () {
+                    this.items.pop();
+                }
+            }
+
+//            methods:{
+//                add:function () {
+//                    this.items.splice(0,1,this.num++);
+//                },
+//                remove:function () {
+//                    this.items.splice(0,-1);
+//                }
+//            }
+        })
+    </script>
+</body>
+</html>

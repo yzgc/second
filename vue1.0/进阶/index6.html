@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>再一次全局注册</title>
+    <script src="../js/vue.js"></script>
+    <style>
+        ul li:nth-child(even){
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+
+    <!--<div id="app">-->
+        <!--<my-com></my-com>-->
+    <!--</div>-->
+
+    <div id="example">
+        <xuan></xuan>
+        <xuan></xuan>
+    </div>
+
+    <script>
+//        Vue.component('my-com',{
+//            template:'<ul>' +
+//            '<li>111111</li>' +
+//            '<li>22222</li>' +
+//            '<li>33333</li>' +
+//            '<li>44444</li>' +
+//            '</ul>'
+//        })
+//        new  Vue({
+//            el:"#app"
+//        })
+
+
+        //局部注册
+        var Child = Vue.extend({
+            template:'<ul>' +
+            '<li>首页</li>' +
+            '<li>列表</li>' +
+            '<li>详情</li>' +
+            '<li>效果</li>' +
+            '</ul>'
+        });
+        var Parent = Vue.extend({
+            template:'<my-component></my-component>',
+            components:{
+                'my-component':Child
+            }
+        })
+
+        new Vue({
+            el:"#example",
+            components:{
+                'xuan':Parent
+            }
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模版</title>
+    <script src="js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button id="app" v-on:click="green">green</button>
+    <script>
+        var ve = new Vue({
+            data:{
+                name:'people'
+            },
+            el:"#app",
+            methods:{
+                green:function () {
+                    alert("HELLO" + " " + this.name + " " + "!");
+                    alert(event.target.tagName);
+                }
+            }
+        })
+    </script>
+</body>
+</html>

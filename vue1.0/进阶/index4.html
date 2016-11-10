@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模版</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <my-component></my-component>
+    </div>
+
+    <script>
+        //这样写，省略了声明构造器这一项，：var mr=Vue.extend({
+        // template:''
+        // })
+        //vue.js在背后自动调用Vue.extend()
+        Vue.component('my-component',{
+            template:'<div>这是一个便捷的方法</div>' +
+            '<h1>这是一个H标签</h1>'
+
+        })
+        new Vue({
+            el:"#app"
+        })
+    </script>
+</body>
+</html>

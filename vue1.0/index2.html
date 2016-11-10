@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ul>
+    </div>
+    <script>
+        var two=new Vue({
+            el:"#app",
+            data:{
+                todos:[
+                    {text:'first11'},
+                    {text:'first22'},
+                    {text:'first33'},
+                    {text:'first44'}
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

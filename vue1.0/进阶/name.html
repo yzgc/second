@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <my-component></my-component>
+</div>
+
+
+<script>
+    var Ctor = Vue.extend({
+        name: 'stack-overflow',
+        template:
+        '<div>' +
+        // 递归地调用自己
+        '<stack-overflow></stack-overflow>' +
+        '</div>'
+    })
+
+    // 将导致错误：Maximum call stack size exceeded
+    // 不过我们假定没问题...
+    var vm = new Ctor()
+
+    console.log(vm) // -> StackOverflow {$el: null, ...}
+
+    Vue.component('my-component',Ctor);
+    new  Vue({
+        el:"#app"
+    })
+</script>
+</body>
+</html>

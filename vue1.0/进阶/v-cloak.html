@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width maximum-scalae=1 minimum-scale=1 initial-scale=1 user-scalable=no" >
+    <title>模版</title>
+    <script src="../js/vue.js"></script>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+        /***
+        这段 CSS 的含义是，包含 v-cloak (cloak n. 披风，斗篷；vt. 遮盖，掩盖) 属性的 html 标签在页面初始化时会被隐藏。
+        本demo无法演示
+        ***/
+    </style>
+</head>
+<body>
+    <div id="app" v-cloak>{{message}}</div>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                message:'hello word!'
+            },
+            methods:{
+                reverse:function () {
+                    console.log(this);
+                    console.log(this.message);
+                    this.message=this.message.reverse();
+                }
+            }
+        })
+    </script>
+</body>
+</html>

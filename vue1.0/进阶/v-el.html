@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width maximum-scalae=1 minimum-scale=1 initial-scale=1 user-scalable=no" >
+    <title>模版</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <!--
+     v-el
+    -->
+    <div id="app">
+        <p v-el:msg>这是一个实验语句1</p>
+        <p v-el:other-msg>这是实验语句2</p>
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            created:function () {
+                console.log(this.$els.msg.textContent) // -> "hello"
+                console.log(this.$els.other-msg.textContent) // -> "world"
+            }
+        })
+
+
+
+    </script>
+</body>
+</html>

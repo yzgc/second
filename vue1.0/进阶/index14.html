@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width maximum-scalae=1 minimum-scale=1 initial-scale=1 user-scalable=no" >
+    <title>limitBy</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+        <ul id="app">
+            <input type="text" v-model="t">
+            <li v-for="item in items | filterBy t in 't'">
+                <span>{{item.t}}</span>
+            </li>
+        </ul>
+
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                name:"",
+                items:[
+                    {t:'hello'},
+                    {t:'word'},
+                    {t:'help'},
+                    {t:'department'}
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

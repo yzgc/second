@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模版</title>
+    <script src="js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var data={a:1};
+        var ve=new Vue({
+            data:data
+        })
+
+        console.log(ve.a)
+        console.log(ve.a==data.a)
+        ve.a=10;
+        console.log(data.a);
+        data.a=100;
+        console.log(ve.a);
+    </script>
+</body>
+</html>

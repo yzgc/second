@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模版</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <my-component></my-component>
+    </div>
+
+    <script>
+        var MyComponent = Vue.extend({
+            template:'<div>123456789</div>'
+        });
+
+        Vue.component('my-component','MyComponent');
+
+        new Vue({
+            el:"#app"
+        });
+    </script>
+</body>
+</html>

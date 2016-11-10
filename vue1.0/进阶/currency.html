@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width maximum-scalae=1 minimum-scale=1 initial-scale=1 user-scalable=no" >
+    <title>currency</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<!--
+    如果只有一个参数，复数形式只是简单地在末尾添加一个 “s”。
+    如果有多个参数，参数被当作一个字符串数组，
+    对应一个、两个、三个…复数词。如果值的个数多于参数的个数，多出的使用最后一个参数。
+-->
+<ul id="app">
+    <!--current 默认的是$-->
+    <li v-for="item in items">{{item.t | currency '￥'}}</li>
+</ul>
+
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            items:[
+                {t:'1000'},
+                {t:'4552'},
+                {t:'36335'},
+                {t:'44144425'},
+                {t:'511'},
+                {t:'611'},
+                {t:'741'},
+                {t:'84'}
+            ]
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width maximum-scalae=1 minimum-scale=1 initial-scale=1 user-scalable=no" >
+    <title>排序</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <!--
+        orderBy 参数小于零时，数字字母等降序排列，反之>=0时升序排列
+    -->
+    <div id="app">
+        <button @click="order=order*(-1)">button</button>
+        <ul>
+            <li v-for="item in items" v-on:click="remove($index)">{{item.name}}</li>
+        </ul>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                order:1,
+                items:[
+                    {name:'jack'},
+                    {name:'rose'},
+                    {name:'tom'},
+                    {name:'a'},
+                    {name:'bom'}
+                ]
+            },
+            methods:{
+                remove:function(count){
+                    var a = this.items[count];
+                    this.items.$remove(a);
+                }
+            }
+        })
+        vm.items.$set(vm.items.length,{name:'china'});
+//        console.log(vm.items[0].name);
+        console.log(vm.items.length)
+        vm.items.$set(vm.items.length,{name:'amiren'});
+        console.log(vm.items.length);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width maximum-scalae=1 minimum-scale=1 initial-scale=1 user-scalable=no" >
+    <title>模版</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        //partial:部分的,偏爱的
+        var Profile = Vue.extend({
+            template:'<div>{{xing}}  {{name}} = {{fullName}}</div>'
+        });
+
+        var profile = new Profile({
+            data:{
+                xing:'zhou',
+                name:'qiyang',
+                fullName:'zhouqiyang'
+            }
+        })
+
+        profile.$mount("#app");
+        Vue.nextTick(function () {
+            console.log('DOM已经更新kk');
+        })
+        Vue.set(profile,name,'bing');
+        console.log(profile);
+        Vue.delete(profile,name);
+        console.log(profile.name);
+
+    </script>
+</body>
+</html>

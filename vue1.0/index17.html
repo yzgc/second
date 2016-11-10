@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <script src="js/vue.js"></script>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            border:1px solid gray;
+        }
+
+        @keyframes scale{
+            0%{
+                width:100px;
+                height:100px;
+            }
+            50%{
+                width:200px;
+                height:200px;
+                background: yellow;
+            }
+            100%{
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .fat-enter , .fat-leave{
+            animation: scale 1s linear;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="change">变化</button>
+        <div class="box animated" v-if="flag" transition="fat"></div>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                flag:true
+            },
+            methods:{
+                change:function () {
+                    this.flag=!this.flag;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

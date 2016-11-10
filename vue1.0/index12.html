@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表渲染</title>
+    <script src="js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <ul id="app">
+        <li v-for="item in items" v-bind:style="obj"> {{Message}}----{{$index}}----{{item.text}}</li>
+    </ul>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                Message: 'Parent',
+                obj:{
+                    color:'red',
+                    fontSize: '20px',
+                    background:'yellow',
+                    width:'200px',
+                    listStyle:'none'
+                },
+                items:[
+                    {text:"第0行"},
+                    {text:"第1行"},
+                    {text:"第2行"},
+                    {text:"第3行"},
+                    {text:"第4行"}
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width maximum-scalae=1 minimum-scale=1 initial-scale=1 user-scalable=no" >
+    <title>模版</title>
+    <script src="../js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <script>
+        var vm = new Vue({
+            data: { a: 7 },
+            computed: {
+                // 仅读取，值只须为函数
+                aDouble: function () {
+                    return this.a * 6
+                },
+                // 读取和设置
+                aPlus: {
+                    get: function () {
+                        return this.a + 1
+                    },
+                    set: function (v) {
+                        this.a = v - 1
+                    }
+                }
+            }
+        })
+        console.log(vm.aPlus)// -> 8
+        vm.aPlus=11
+        console.log(vm.a)// -> 10
+        console.log( vm.aDouble) // -> 60
+    </script>
+</body>
+</html>

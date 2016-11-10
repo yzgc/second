@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模版</title>
+    <script src="js/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app">{{fullName}}</div>
+    <script>
+        var nice=new Vue({
+            el:"#app",
+            data:{
+                firstName:"zhou",
+                secondName:"qiayng"
+            },
+            computed:{
+                fullName:{
+                    get:function () {
+                        return this.firstName + "---"  + this.secondName;
+                    },
+                    set:function () {
+
+//                            this.firstName=names[0]
+//                            this.secondName=names[names.length-1]
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
