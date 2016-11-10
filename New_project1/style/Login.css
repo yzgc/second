@@ -1,0 +1,376 @@
+/*******************logotop****************************/
+input{
+    color:#cccccc;
+    font-size: 14px;
+}
+#logotop{
+    width: 100%;
+    height: 30px;
+    background: #f2f2f2;
+}
+#logotop #logotop-1{
+    width:1082px;
+    height:30px;
+    margin:0 auto;
+    background: url(../resource/images/Login/img3.jpg) no-repeat 992px center;
+}
+
+#logotop-1 li{
+    float:left;
+}
+
+#logotop-1 .ul-1 {
+     float: left;
+ }
+#logotop-1 .ul-1 li a{
+    line-height: 30px;
+    margin-left:33px;
+}
+#logotop-1 .ul-1 li span{
+    line-height: 30px;
+}
+
+#logotop-1 .ul-2 {
+    float: right;
+}
+
+#logotop-1 .ul-2 li a{
+    line-height: 30px;
+}
+#logotop-1 .ul-2 li{
+    margin-right:24px;
+}
+
+#logotop-1 .ul-2 #li1{
+    background: url(../resource/images/Login/img2-1.jpg) no-repeat right center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#logotop-1 .ul-2 #li2{
+    background: url(../resource/images/Login/img1.jpg) no-repeat left center;
+    padding-left: 13px;
+}
+#logotop-1 .ul-2 #li3{
+    background: url(../resource/images/Login/img2-1.jpg) no-repeat right center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right:40px;
+}
+#logotop-1 .ul-2 #li4{
+    background: url(../resource/images/Login/img2-1.jpg) no-repeat right center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right:5px;
+}
+    /*******************************logo********************/
+#logo{
+    width:100%;
+    height:108px;
+}
+
+#logo #logo-1{
+    width:1082px;
+    height:108px;
+    margin:0 auto;
+}
+#logo #logo-1 img{
+    display: inline;
+}
+
+/*******************************banner********************/
+#banner{
+    width:100%;
+    height:785px;
+    background:url(../resource/images/Login/img12.jpg) no-repeat;
+}
+
+#banner #banner-2{
+    width:1082px;
+    height:785px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#banner #banner-1{
+    width:407px;
+    height:531px;
+    background: #ffffff;
+    position:absolute;
+    top:124px;
+    left:675px;
+}
+
+#banner #banner-2 #banner-3{
+    width:330px;
+    height:487px;
+    position: absolute;
+    top:32px;
+    left:40px;
+
+}
+
+#banner #banner-2 #banner-3 span{
+    font-size:23px;
+    color:#000000;
+    font-weight: bold;
+
+}
+#banner #banner-2 #banner-3 span a{
+
+    font-size:16px;
+    color:#00c8ff;
+    width:70px;
+    float:right;
+
+}
+
+#banner #banner-2 #banner-3 h3{
+    margin-top:20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+#banner #banner-2 #banner-3 input{
+    margin-top: 5px;
+    width:328px;
+    height:31px;
+}
+#banner #banner-2 #banner-3 #input3{
+    width:176px;
+
+}
+#banner #banner-2 #banner-3 #span1{
+    display:inline-block;
+    width:75px;
+    height:21px;
+    border:1px solid blue;
+    margin:0px 10px;
+    margin-top:10px;
+}
+
+#banner #banner-2 #banner-3 #input4{
+    margin-top:10px;
+    width:20px;
+    heigth:20px;
+    float:left;
+
+}
+
+
+
+#banner #banner-2 #banner-3 u a{
+    display:inline-block;
+    float:right;
+    height:31px;
+    font-style: normal;
+    line-height: 31px;
+    margin-top: 10px;
+}
+
+#banner #banner-2 #banner-3 i a{
+    display:inline-block;
+    height:31px;
+    font-style: normal;
+    line-height: 31px;
+    margin-top: 10px;
+}
+
+#banner #banner-2 #banner-3 #button1{
+    width:328px;
+    height:31px;
+    background:#00c8ff;
+    font-size:18px;
+    color:white;
+    border:none;
+    margin-top:10px;
+}
+
+#banner #banner-2 #banner-3 p{
+    border-top:1px dashed #ccc;
+    margin-top:16px;
+    padding-top: 16px;
+}
+
+#banner #banner-2 #banner-3 ul{
+    margin-top:10px;
+}
+
+#banner #banner-2 #banner-3 ul li{
+    float:left;
+    width:35px;
+    height:25px;
+    margin-top:6px;
+    margin-right:5px;
+
+}
+#banner #banner-2 #banner-3 ul .li-10{
+    background: url(../resource/images/Login/img5.jpg) no-repeat left center;
+    padding-left:30px;
+}
+#banner #banner-2 #banner-3 ul .li-11{
+    background: url(../resource/images/Login/img6.jpg) no-repeat left center;
+    padding-left:30px;
+    width: 40px;
+
+}
+#banner #banner-2 #banner-3 ul .li-12{
+    background: url(../resource/images/Login/img7.jpg) no-repeat left center;
+    padding-left:30px;
+    width:80px;
+}
+#banner #banner-2 #banner-3 ul .li-13{
+    background: url(../resource/images/Login/img8.jpg) no-repeat left center;
+    padding-left:30px;
+}
+#banner #banner-2 #banner-3 ul .li-14{
+    background: url(../resource/images/Login/img9.jpg) no-repeat left center;
+    padding-left:30px;
+}
+#banner #banner-2 #banner-3 ul .li-15{
+    background: url(../resource/images/Login/img10.jpg) no-repeat left center;
+    padding-left:30px;
+    margin-right:12px;
+}
+#banner #banner-2 #banner-3 ul .li-16{
+    background: url(../resource/images/Login/img11.jpg) no-repeat left center;
+    padding-left:30px;
+}
+
+
+/*******************************bott********************/
+#bott{
+    height:199px;
+    width:100%;
+}
+#bott #bott-1{
+    height:199px;
+    width:1182px;
+    margin:0 auto;
+}
+
+#bott #bott-1 dl{
+    float:left;
+    margin-top:32px;
+    margin-right:77px;
+}
+
+#bott #bott-1 dl dt {
+    font-size:15px;
+    color:#6c6c6c;
+    font-weight:bold;
+
+}
+
+#bott #bott-1 dl dd a{
+    font-size:14px;
+    color:#000000;
+
+}
+#bott #bott-1 dl dd{
+    margin-top: 8px;
+}
+#bott #bott-1 dl dd img{
+    width:92px;
+    height:92px;
+}
+#bott #bott-1 dl dd i{
+color:#00c8ff;
+    font-style: normal;
+}
+#bott #bott-1 dl dd span{
+    color:#797979;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+/*******************************bottom********************/
+#bottom{
+    width:100%;
+    height:35px;
+    background:#00c8ff;
+}
+
+#bottom #bottom-1{
+    width:580px;
+    height:35px;
+    margin:0 auto;
+}
+
+
+#bottom #bottom-1 ul #li-1{
+    background: url(../resource/images/Login/img13.jpg) no-repeat left center;
+    padding-left:35px;
+    float:left;
+    margin-right:66px;
+    color:#ffffff;
+    font-size: 15px;
+}
+#bottom #bottom-1 ul #li-2{
+    background: url(../resource/images/Login/img14.jpg) no-repeat left center;
+    padding-left:35px;
+    float:left;
+    margin-right:66px;
+    color:#ffffff;
+    font-size: 15px;
+}
+#bottom #bottom-1 ul #li-3{
+    background: url(../resource/images/Login/img15.jpg) no-repeat left center;
+    padding-left:35px;
+    float:left;
+    margin-right:66px;
+    color:#ffffff;
+    font-size: 15px;
+}
+#bottom #bottom-1 ul #li-4{
+    background: url(../resource/images/Login/img16.jpg) no-repeat left center;
+    padding-left:35px;
+    float:left;
+    margin-right:0;
+    color:#ffffff;
+    font-size: 15px;
+}
+#bottom #bottom-1 ul{
+    float:left;
+    margin-top:7px;
+}
+
+/*******************************next********************/
+#next{
+    width:100%;
+    height:178px;
+}
+
+#next #next-1{
+    width:590px;
+    height:178px;
+    margin:0 auto;
+}
+#next #next-1 ul{
+    width:550px;
+    height:50px;
+    margin:0 auto;
+    margin-top:20px;
+}
+
+#next #next-1 ul li{
+    width:116px;
+    height:39px;
+    float:left;
+    margin:0  33px;
+}
+#next #next-1 p{
+    width:530px;
+    height: 25px;
+    margin:0 auto;
+    font-size: 12px;
+    color:#6c6c6c;
+    padding-top:27px;
+}
+
+#next #next-1 h4{
+    width:460px;
+    margin:0 auto;
+    font-size: 12px;
+    color:#6c6c6c;
+    font-weight:normal ;
+}
